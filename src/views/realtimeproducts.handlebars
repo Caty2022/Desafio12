@@ -1,0 +1,34 @@
+<main>
+   <header>
+      <h1>Real Time Products</h1>
+   </header>
+   <div class="miPerfil">
+      <h2>Productos actualizados en tiempo real</h2>
+   </div>
+
+   <div class="listadoProductos" id="contenedorProductos"></div>
+
+   <h2 style="text-align: center; margin: 2rem;">Formulario para agregar productos</h2>
+
+   <form class="miFormulario">
+      <input type="text" id="title" class="miInput" placeholder="Titulo" />
+      <input type="text" id="description" class="miInput" placeholder="Descripcion" />
+      <input type="number" id="price" class="miInput" placeholder="Precio" />
+      <input type="text" id="img" class="miInput" value="Sin Imagen" />
+      <input type="text" id="code" class="miInput" placeholder="Código" />
+      <input type="number" id="stock" class="miInput" placeholder="Stock" />
+      <input type="text" id="category" class="miInput" placeholder="Categoria" />
+      <select id="status" class="miInput">
+         <option value="true"> Activo </option>
+         <option value="false"> Inactivo </option>
+      </select>
+      <button type="button" id="btnEnviar" class="miBoton"> Enviar </button>
+      <div id="mensajeExito" class="miMensajeExito" style="display: none;">Producto agregado con éxito</div>
+      <!-- Aquí debe estar el mensaje de éxito -->
+   </form>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
+<script src="js/realtime.js"></script>

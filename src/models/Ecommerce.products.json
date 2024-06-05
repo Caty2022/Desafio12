@@ -1,0 +1,140 @@
+[{
+  "_id": {
+    "$oid": "65f37ca36a130caa43b67a6f"
+  },
+  "title": "Remera Mike",
+  "description": "Remera elaborada 100% en algodón pima, con cuello tipo t-shirt",
+  "price": 20000,
+  "image": "sin imagen",
+  "code": "abc123",
+  "stock": 10,
+  "category": "Remera",
+  "status": true,
+  "thumbnails": []
+},
+{
+  "_id": {
+    "$oid": "65f37ca36a130caa43b67a70"
+  },
+  "title": "Short Francis",
+  "description": "Short rayado para niño, con elástico en la cintura y cordón de algodón",
+  "price": 20800,
+  "image": "sin imagen",
+  "code": "abc124",
+  "stock": 15,
+  "category": "Short",
+  "status": true,
+  "thumbnails": []
+},
+{
+  "_id": {
+    "$oid": "65f37ca36a130caa43b67a71"
+  },
+  "title": "Enterito Lix Dino",
+  "description": "Enterito de algodón pima estampado",
+  "price": 44500,
+  "image": "sin imagen",
+  "code": "abc125",
+  "stock": 8,
+  "category": "Pijama",
+  "status": true,
+  "thumbnails": []
+},
+{
+  "_id": {
+    "$oid": "65f37ca36a130caa43b67a72"
+  },
+  "title": "Buzo Marley",
+  "description": "Buzo fabricado en waffle suave y de calidad",
+  "price": 40300,
+  "image": "sin imagen",
+  "code": "abc126",
+  "stock": 15,
+  "category": "Sweaters",
+  "status": true,
+  "thumbnails": []
+},
+{
+  "_id": {
+    "$oid": "65f37ca36a130caa43b67a73"
+  },
+  "title": "Vestido Camile",
+  "description": "Vestido bretelero confeccionado en muselina de algodón",
+  "price": 38900,
+  "image": "sin imagen",
+  "code": "abc127",
+  "stock": 15,
+  "category": "Vestidos",
+  "status": true,
+  "thumbnails": []
+},
+{
+  "_id": {
+    "$oid": "65f37ca36a130caa43b67a74"
+  },
+  "title": "Body Fun",
+  "description": "Body estampado elaborado en algodón.",
+  "price": 19700,
+  "image": "sin imagen",
+  "code": "abc128",
+  "stock": 15,
+  "category": "Bodies",
+  "status": true,
+  "thumbnails": []
+},
+{
+  "_id": {
+    "$oid": "65f37ca36a130caa43b67a75"
+  },
+  "title": "Boxer",
+  "description": "Bóxers confeccionados en suave algodón pima",
+  "price": 20800,
+  "image": "sin imagen",
+  "code": "abc129",
+  "stock": 15,
+  "category": "Ropa interior",
+  "status": true,
+  "thumbnails": []
+},
+{
+  "_id": {
+    "$oid": "65f37ca36a130caa43b67a76"
+  },
+  "title": "Zueco Humms",
+  "description": "Zueco Humms Beach",
+  "price": 18000,
+  "image": "sin imagen",
+  "code": "abc130",
+  "stock": 15,
+  "category": "Calzado",
+  "status": true,
+  "thumbnails": []
+},
+{
+  "_id": {
+    "$oid": "65f37ca36a130caa43b67a77"
+  },
+  "title": "Colonia Baby",
+  "description": "Colonia para bebes en frasco de vidrio con vaporizador",
+  "price": 21800,
+  "image": "sin imagen",
+  "code": "abc131",
+  "stock": 15,
+  "category": "Perfume",
+  "status": true,
+  "thumbnails": []
+},
+{
+  "_id": {
+    "$oid": "65f37ca36a130caa43b67a78"
+  },
+  "title": "Manta Sol",
+  "description": "Manta de algodón pima",
+  "price": 44000,
+  "image": "sin imagen",
+  "code": "abc132",
+  "stock": 10,
+  "category": "Manta",
+  "status": true,
+  "thumbnails": []
+}]

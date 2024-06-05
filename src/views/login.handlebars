@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="/api/users/login" method="POST">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+      </div>
+      <button class="btn-login" type="submit">Login</button>
+      <a href="/api/users/auth/github" class="login-form-link"> Entrar con Github </a>
+      <a href="/register" class="login-form-link"> Registrarse</a>
+      <a href="/reset-password" class="login-form-link"> ¿Olvidaste tu contraseña?</a>         
+      
+    </form>
+  </div>
+</div>

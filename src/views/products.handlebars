@@ -1,0 +1,33 @@
+<div class="miPerfil">
+<h2>Productos</h2>
+<a href="/api/users/profile">Regresar a Perfil</a>
+</div>
+<div class="container">
+    <div class="row">
+        {{#each productos}}
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{this.img}}" alt="" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title">{{title}}</h5>
+                        <p class="card-text">{{description}}</p>
+                        <p class="card-text"><small class="text-muted">Price: ${{price}}</small></p>
+                        <p class="card-text"><small class="text-muted">Category: {{category}}</small></p>
+                        <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
+<div class="paginacion">
+{{#if hasPrevPage}}
+    <a class="btnPage" href="/products?page={{prevPage}}"> Anterior </a>
+{{/if}}
+<p class="numeroPagina"> Pagina {{currentPage}} de {{totalPages}} </p>
+{{#if hasNextPage}}
+    <a class="btnPage" href="/products?page={{nextPage}}"> Siguiente </a>
+{{/if}} 
+</div>
+</main>

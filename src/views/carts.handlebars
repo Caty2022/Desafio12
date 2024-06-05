@@ -1,0 +1,34 @@
+<style>
+   /* HEADER */ .navbar { position: fixed; top: 0; left: 0; width: 100%; background-color: #45a050; padding: 10px; display: flex; justify-content: space-between; } .home a:hover{ border-radius: 1rem; color: black; } .nav { list-style: none; margin: 0; padding: 0; } .nav li { font-size: 3rem; margin-right: 20px; display: inline; } .nav a { color: white; text-decoration: none; } .nav a:hover { border-radius: 1rem; color: black; } .left p a{ font-size: 3rem; text-decoration: none; color: white; } /* FIN DEL HEADER */ main{ margin-top: 6.7rem; } header { background-color: black; margin-bottom: 1rem; text-align: center; width: 100%; } header h1 { color: white; font-size: 4rem; } /* Wrapper profile*/ .wrapper { display: flex; justify-content: center; align-items: center; height: 79vh; background-color: #4caf50; } .profile-container { background-color: white; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); padding: 20px; width: 300px; } .profile-container h2 { margin-top: 0; margin-bottom: 20px; text-align: center; } .botonVerde { background-color: #4caf50; border: none; cursor: pointer; font-size: 16px; padding: 10px 5px; border-radius: 3px; width: 100%; text-decoration: none; } .botonVerde:hover { background-color: #45a049; } .profile-container a { display: block; text-align: center; margin-top: 15px; color: white; text-decoration: none; } .profile-container a:hover { text-decoration: none; } .logout{ margin-top: 1rem; background-color: black; border: none; cursor: pointer; font-size: 16px; padding: 10px 10px; border-radius: 3px; width: 100%; color: white; } .datos{ list-style: none; } .datos li{ padding-bottom: 10px; font-size: 1rem; } .miPerfil { align-items: center; text-align: center; border: 1rem solid black; } .miPerfil h2 { color: #45a049; font-size: 2rem; } .miPerfil a { display: inline-block; padding: 10px 20px; background-color: #4caf50; /* Color de fondo del botón */ color: #fff; /* Color del texto del botón */ text-decoration: none; /* Quitar subrayado del enlace */ border: none; /* Quitar borde */ border-radius: 5px; /* Añadir bordes redondeados */ cursor: pointer; /* Cambiar cursor a pointer al pasar sobre el botón */ transition: background-color 0.3s; /* Efecto de transición */ margin: 1rem; } .miPerfil a:hover { background-color: #45a049; /* Cambiar color de fondo al pasar el ratón */ }
+   {{! Parte de carrito }}
+   .contenedor { display: flex; flex-direction: column; gap: 20px; margin-bottom: 20px; margin-top: 1rem; } .contenedor div { border: 1px solid #ccc; padding: 10px; border-radius: 5px; background-color: #f9f9f9; } .contenedor div p { margin: 5px 0; } .contenedor div button { background-color: #4caf50; color: white; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer; } .contenedor div button:hover { background-color: #45a049; } .btn-vaciar { margin-top: 10px; } .total-compra { margin-top: 20px; font-size: 18px; font-weight: bold; } .btn-vaciar { background-color: #4caf50; color: white; font-weight: bold; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s ease; margin-top: 0; } .btn-vaciar:hover { background-color: #45a049; }
+</style>
+<main>
+<header>
+   <h1>Carrito de Compras</h1>
+</header>
+
+<div class="miPerfil">
+   <h2>Productos en tu carrito</h2>
+   <p>Tu numero de carrito es:{{cartId}}</p>
+   <a href="/products">Regresar a productos</a>
+</div>
+
+<div class="contenedor">
+   {{#each productos}}
+      <div>
+         <p>Producto: {{this.product.title}}</p>
+         <p>Precio por unidad: {{this.product.price}}</p>
+         <p>Cantidad: {{this.quantity}}</p>
+         <p>Total por producto: ${{this.product.totalPrice}}</p>
+         <button onclick="eliminarProducto('{{this.cartId}}', '{{this.product._id}}')" class="btn btn-danger">Eliminar</button>
+      </div>
+   {{/each}}
+</div>
+<h3>Total de la compra: ${{totalCompra}}</h3>
+<button onclick="vaciarCarrito('{{cartId}}')" class="btn-vaciar">Vaciar Carrito</button>
+<button onclick="finalizarCompra('{{cartId}}')" class="btn-vaciar">Finalizar Compra</button>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/cart.js"></script>

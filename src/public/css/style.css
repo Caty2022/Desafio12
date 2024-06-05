@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: black;
+  margin-bottom: 1rem;
+}
+header h1 {
+  color: white;
+  font-size: 4rem;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5rem;
+    background-color: #8ea1cf;
+}
+
+.card {
+    width: calc(25% - 20px); /* Tamaño fijo para todas las tarjetas y margen entre ellas */
+    height: 300px; /* Tamaño fijo para todas las tarjetas */
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Agregar transición para suavizar el efecto */
+}
+
+.productImage {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid black;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Escalar ligeramente la tarjeta al pasar el mouse por encima */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center; /* Centrar el texto de la descripción */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    border-radius: 0;
+}
+.btnPage {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333333;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btnPage:hover {
+  background-color: #f0f0f0;
+}
+.numeroPagina {
+  font-size: 14px;
+  text-align: center;
+  margin: 1rem;
+}
+.paginacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.miPerfil {
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1rem solid black;
+}
+.miPerfil h2 {
+  color:#007bff;
+  font-size: 2rem;
+}
+.miPerfil p {
+  font-size: 1.5rem;
+}
+.miPerfil a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8ea1cf; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  text-decoration: none; /* Quitar subrayado del enlace */
+  border: none; /* Quitar borde */
+  border-radius: 5px; /* Añadir bordes redondeados */
+  cursor: pointer; /* Cambiar cursor a pointer al pasar sobre el botón */
+  transition: background-color 0.3s; /* Efecto de transición */
+}
+.miPerfil a:hover {
+  background-color: #8ea1cf; /* Cambiar color de fondo al pasar el ratón */
+}
+
+
+/* Login */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #8ea1cf;
+}
+.login-container {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+.login-container h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.btn-login {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.btn-login:hover {
+  background-color: #8ea1cf;
+}
+.login-container a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Register */
+.register-form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-form-group {
+  margin-bottom: 15px;
+}
+
+.register-form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.register-form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.register-form-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.register-form-button:hover {
+  background-color: #0056b3;
+}
+
